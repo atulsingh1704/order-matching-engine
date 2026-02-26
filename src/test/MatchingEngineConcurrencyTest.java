@@ -17,7 +17,7 @@ public class MatchingEngineConcurrencyTest {
         TradeEventQueue q=new TradeEventQueue();
         MatchingEngine engine=new MatchingEngine(book,q);
 
-        ExecutorService es=Executors.newFixedThreadPool(50);
+        ExecutorService es=Executors.newFixedThreadPool(5000);
 
         for(int i=0;i<1000;i++){
             long id=i;
